@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>BILLBOOK - Budget</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+    <!-- Top Header -->
+
+    <header class="topbar">
+
+        <button class="menu-btn">
+            ☰
+        </button>
+
+
+        <div class="logo">
+            BILLBOOK
+        </div>
+
+
+        <button class="profile-btn">
+            ♙
+        </button>
+
+    </header>
+
+
+
+    <!-- Main Budget Page -->
+
+    <main class="budget-page">
+
+
+        <!-- Budget Summary -->
+
+        <section class="budget-summary">
+
+
+            <p class="budget-label">
+                THIS MONTH
+            </p>
+
+
+            <!-- JavaScript will calculate this -->
+
+            <h1 id="remainingAmount">
+                ₹0
+            </h1>
+
+
+            <p class="remaining-text">
+                Remaining this month
+            </p>
+
+
+            <div class="budget-details">
+
+                <p>
+                    Spent:
+                    <span id="budgetSpent">
+                        ₹0
+                    </span>
+                </p>
+
+
+                <p>
+                    Budget:
+                    <span id="totalBudget">
+                        ₹0
+                    </span>
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- Daily Spending Limit -->
+
+        <section class="daily-cap">
+
+            <h2>
+                Daily Cap:
+                <span id="dailyLimit">
+                    ₹0
+                </span>
+            </h2>
+
+
+            <p id="dailyMessage">
+                Your daily spending limit will appear here.
+            </p>
+
+        </section>
+
+
+
+        <!-- Category Breakdown -->
+
+        <section class="category-section">
+
+            <h2>
+                Category Breakdown
+            </h2>
+
+
+            <!-- Categories will eventually be generated
+                 from the user's expense data -->
+
+         <div id="categoryList">
+
+    <p class="no-budget-data">
+        Your category spending will appear here.
+    </p>
+
+</div>
+
+
+        </section>
+
+    </main>
+
+
+
+    <!-- Bottom Navigation -->
+
+    <nav class="bottom-nav">
+
+
+        <a
+            href="index.html"
+            class="nav-item"
+        >
+
+            <span class="nav-icon">
+                ▦
+            </span>
+
+            <span>
+                Dashboard
+            </span>
+
+        </a>
+
+
+        <a
+            href="ledger.html"
+            class="nav-item"
+        >
+
+            <span class="nav-icon">
+                ▤
+            </span>
+
+            <span>
+                Ledger
+            </span>
+
+        </a>
+
+
+        <a
+            href="add-expense.html"
+            class="nav-item"
+        >
+
+            <span class="nav-icon">
+                +
+            </span>
+
+            <span>
+                Add
+            </span>
+
+        </a>
+
+
+        <a
+            href="budget.html"
+            class="nav-item active"
+        >
+
+            <span class="nav-icon">
+                ♧
+            </span>
+
+            <span>
+                Budget
+            </span>
+
+        </a>
+
+
+        <a
+            href="insights.html"
+            class="nav-item"
+        >
+
+            <span class="nav-icon">
+                ▥
+            </span>
+
+            <span>
+                Insights
+            </span>
+
+        </a>
+
+
+    </nav>
+
+
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

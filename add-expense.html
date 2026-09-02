@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BILLBOOK - Add Expense</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+    <!-- Top Header -->
+
+    <header class="topbar">
+
+        <button class="menu-btn">
+            ☰
+        </button>
+
+
+        <div class="logo">
+            BILLBOOK
+        </div>
+
+
+        <button class="profile-btn">
+            ♙
+        </button>
+
+    </header>
+
+
+
+    <!-- Main Content -->
+
+    <main class="add-expense">
+
+
+        <!-- Personal / Shared -->
+
+        <div class="expense-type">
+
+            <button class="type-button active">
+                Personal
+            </button>
+
+         <a
+    href="shared.html"
+    class="type-button"
+>
+    Shared
+</a>
+
+        </div>
+
+
+
+        <!-- Amount -->
+
+        <section class="amount-section">
+
+            <label for="amount">
+                AMOUNT
+            </label>
+
+
+            <div class="amount-input">
+
+                <span>
+                    ₹
+                </span>
+
+                <input
+                    type="number"
+                    id="amount"
+                    placeholder="0"
+                >
+
+            </div>
+
+        </section>
+
+
+
+        <!-- Expense Details -->
+
+        <section class="expense-details">
+
+
+            <!-- Category -->
+
+            <div class="form-section">
+
+                <label>
+                    CATEGORY
+                </label>
+
+
+                <div class="category-buttons">
+
+                    <button class="category-button">
+                        🍴 Food
+                    </button>
+
+                    <button class="category-button">
+                        🚗 Transport
+                    </button>
+
+                    <button class="category-button">
+                        🛍 Shopping
+                    </button>
+
+                    <button class="category-button">
+                        🎬 Entertainment
+                    </button>
+
+                    <button class="category-button">
+                        🎓 Education
+                    </button>
+
+                    <button class="category-button">
+                        🧾 Bills
+                    </button>
+
+                    <button class="category-button">
+                        🔄 Subs
+                    </button>
+
+                    <button class="category-button">
+                        ••• Other
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Date and Payment Method -->
+
+            <div class="details-row">
+
+
+                <!-- Date -->
+
+                <div class="form-section">
+
+                    <label for="date">
+                        DATE
+                    </label>
+
+                    <input
+                        type="date"
+                        id="date"
+                        class="simple-input"
+                    >
+
+                </div>
+
+
+
+                <!-- Payment Method -->
+
+                <div class="form-section">
+
+                    <label>
+                        METHOD
+                    </label>
+
+
+                    <div class="method-buttons">
+
+                        <button class="method-button">
+                            UPI
+                        </button>
+
+                        <button class="method-button active">
+                            Card
+                        </button>
+
+                        <button class="method-button">
+                            Cash
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Note -->
+
+            <div class="form-section">
+
+                <label for="note">
+                    NOTE
+                </label>
+
+                <input
+                    type="text"
+                    id="note"
+                    class="simple-input"
+                    placeholder="What was this for?"
+                >
+
+            </div>
+
+        </section>
+
+
+
+        <!-- Record Expense -->
+
+        <div class="record-section">
+
+            <button class="record-button">
+                RECORD NOTE
+            </button>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- Bottom Navigation -->
+
+    <nav class="bottom-nav">
+
+
+        <a
+            href="index.html"
+            class="nav-item"
+        >
+
+            <span class="nav-icon">
+                ▦
+            </span>
+
+            <span>
+                Dashboard
+            </span>
+
+        </a>
+
+
+        <a
+            href="ledger.html"
+            class="nav-item"
+        >
+
+            <span class="nav-icon">
+                ▤
+            </span>
+
+            <span>
+                Ledger
+            </span>
+
+        </a>
+
+
+        <a
+            href="add-expense.html"
+            class="nav-item active"
+        >
+
+            <span class="nav-icon">
+                +
+            </span>
+
+            <span>
+                Add
+            </span>
+
+        </a>
+
+
+        <a
+            href="budget.html"
+            class="nav-item"
+        >
+
+            <span class="nav-icon">
+                ♧
+            </span>
+
+            <span>
+                Budget
+            </span>
+
+        </a>
+
+
+        <a
+            href="insights.html"
+            class="nav-item"
+        >
+
+            <span class="nav-icon">
+                ▥
+            </span>
+
+            <span>
+                Insights
+            </span>
+
+        </a>
+
+
+    </nav>
+
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

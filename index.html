@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BILLBOOK - Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+    <!-- Top Header -->
+    <header class="topbar">
+
+        <button class="menu-btn">
+            ☰
+        </button>
+
+
+        <!-- BILLBOOK Logo -->
+        <div class="logo">
+            BILLBOOK
+        </div>
+
+
+        <button class="profile-btn">
+            ♙
+        </button>
+
+    </header>
+
+
+    <!-- Main Dashboard -->
+    <main class="dashboard">
+
+
+        <!-- Available Money -->
+        <section class="balance-section">
+
+            <p class="balance-title">
+                YOU CAN SPEND
+            </p>
+
+
+            <!-- This value will be filled by JavaScript -->
+            <h1 id="availableBalance">
+                ₹0
+            </h1>
+
+
+            <!-- This message will change according to spending -->
+            <p id="spendingMessage" class="spending-message">
+                Loading your money story...
+            </p>
+
+        </section>
+
+
+
+        <!-- Monthly Spending -->
+        <section class="monthly-section">
+
+            <div class="monthly-info">
+
+                <span id="spentAmount">
+                    ₹0 spent
+                </span>
+
+                <span id="budgetAmount">
+                    of ₹0
+                </span>
+
+            </div>
+
+
+            <div class="progress-bar">
+
+                <div
+                    id="budgetProgress"
+                    class="progress"
+                ></div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- Recent Transactions -->
+        <section class="recent-section">
+
+            <h2>
+                Recent
+            </h2>
+
+
+            <!-- JavaScript will insert transactions here -->
+            <div id="recentTransactions">
+
+            </div>
+
+
+            <a
+                href="ledger.html"
+                class="ledger-button"
+            >
+                VIEW LEDGER
+            </a>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+
+
+        <a
+            href="index.html"
+            class="nav-item active"
+        >
+
+            <span class="nav-icon">
+                ▦
+            </span>
+
+            <span>
+                Dashboard
+            </span>
+
+        </a>
+
+
+
+        <a
+            href="ledger.html"
+            class="nav-item"
+        >
+
+            <span class="nav-icon">
+                ▤
+            </span>
+
+            <span>
+                Ledger
+            </span>
+
+        </a>
+
+
+
+        <a
+            href="add-expense.html"
+            class="nav-add"
+        >
+
+            <span>
+                +
+            </span>
+
+            <small>
+                Add
+            </small>
+
+        </a>
+
+
+
+        <a
+            href="budget.html"
+            class="nav-item"
+        >
+
+            <span class="nav-icon">
+                ♧
+            </span>
+
+            <span>
+                Budget
+            </span>
+
+        </a>
+
+
+
+        <a
+            href="insights.html"
+            class="nav-item"
+        >
+
+            <span class="nav-icon">
+                ▥
+            </span>
+
+            <span>
+                Insights
+            </span>
+
+        </a>
+
+
+    </nav>
+
+
+
+    <!-- JavaScript -->
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
