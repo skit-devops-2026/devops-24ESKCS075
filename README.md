@@ -1,4 +1,4 @@
-# <Project Name>
+# BILLBOOK
 
 > Replace every angle-bracket placeholder below. The hygiene check in CI will
 > fail until you do.
@@ -7,17 +7,18 @@
 
 | Roll No. | Name | GitHub username |
 |---|---|---|
-| <roll> | <name> | <username> |
+| 24ESKCS075 | Ayush Mehta | ayushmehta29 |
 
 ## About
 
-<Two or three sentences on what this application does.>
+BILLBOOK is a web-based personal expense tracking application designed specifically for students and young adults.
+Managing small daily expenses can become difficult when spending happens across different categories such as food, transportation, shopping, entertainment, subscriptions, and college-related expenses. Many existing financial applications provide features that are more suitable for detailed personal finance management rather than quick everyday tracking.
 
 ## Tech stack
 
-- Frontend: <e.g. React>
-- Backend: <e.g. Node.js / Express>
-- Database: <e.g. PostgreSQL>
+- Frontend: HTML, CSS, JS
+- Backend: Not yet
+- Database: Not yet
 
 ## Running locally
 
