@@ -49,3 +49,11 @@ make run
 
 `GET /health` returns the running commit SHA. See `Makefile` and the milestone
 sheet for why this is required.
+
+
+## Future Improvements
+
+- Add automated tests for project functionality.
+- Containerize the application using Docker.
+- Set up continuous integration with GitHub Actions.
+- Deploy the application and monitor its availability.
