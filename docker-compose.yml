@@ -1,0 +1,10 @@
+services:
+  billbook:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: billbook:local
+    container_name: billbook
+    ports:
+      - "8081:80"
+    restart: unless-stopped
