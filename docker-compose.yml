@@ -3,8 +3,19 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: billbook:local
+    image: ayushmehta29/billbook:latest
     container_name: billbook
     ports:
-      - "8081:80"
+      - "8081:10000"
+    restart: unless-stopped
+
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: billbook-prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+    depends_on:
+      - billbook
     restart: unless-stopped
