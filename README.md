@@ -28,6 +28,20 @@ make run
 ```
 
 ## Live URL
+## Features
+
+- Track daily expenses.
+- Organize spending by category.
+- Manage budgets.
+- View expense information through a simple web interface.
+
+## Project Structure
+
+- `index.html` — Main application page
+- `add-expense.html` — Add expenses
+- `budget.html` — Budget management
+- `css/` — Stylesheets
+- `js/` — JavaScript files
 
 <Add once M5 is done. Until then, leave as is.>
 
