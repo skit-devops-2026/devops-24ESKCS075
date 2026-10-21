@@ -8,23 +8,23 @@
 #   Java    install: ./mvnw -B dependency:go-offline
 #                                    test: ./mvnw test     build: ./mvnw package
 
+
 .PHONY: install test build run docker-build docker-up
 
 install:
-	@echo "TODO: install dependencies" && exit 1
+	@python3 --version
 
 test:
-	@echo "TODO: run the test suite" && exit 1
+	@python3 -m unittest discover -s tests -v
 
 build:
-	@echo "TODO: build the project" && exit 1
+	@python3 -c "from pathlib import Path; files = ['index.html', 'add-expense.html', 'budget.html', 'css/shared.css', 'css/style.css', 'js/app.js']; missing = [f for f in files if not Path(f).is_file()]; print('Missing files:', missing) if missing else print('BILLBOOK build checks passed'); raise SystemExit(bool(missing))"
 
 run:
-	@echo "TODO: start the app locally" && exit 1
+	@python3 -m http.server 8000
 
-# Needed from M4 onwards
 docker-build:
-	@echo "TODO: docker build for frontend and backend" && exit 1
+	docker build -t billbook:local .
 
 docker-up:
 	docker compose up --build
